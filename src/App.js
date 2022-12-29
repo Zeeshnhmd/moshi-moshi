@@ -1,10 +1,11 @@
-import HeroSection from "./components/hero-section";
+import LandingPage from "./pages/landing-page";
+
 import "./scss/base/base.scss";
 
 const App = () => {
   return (
     <div className="app-container">
-      <HeroSection />
+      <LandingPage />
     </div>
   );
 };

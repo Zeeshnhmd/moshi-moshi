@@ -1,33 +1,38 @@
 @import "../../scss/base/base.scss";
 
 .hero-section-wrapper {
-  position: relative;
+  // position: relative;
   width: 100vw;
   height: 100vh;
+  background: url("../../assets/hero-section.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-  &::before {
-    content: "";
-    position: absolute;
-    // top: 0;
-    // left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url("../../assets/hero-section.png");
-    background-size: cover;
-  }
+  // &::before {
+  //   content: "";
+  //   // position: absolute;
+  //   // top: 0;
+  //   // left: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background: url("../../assets/hero-section.png");
+  //   background-size: cover;
+  // }
 
-  z-index: 10;
+  // z-index: 10;
 }
 
-.hero-section {
-  position: relative;
+// .hero-section {
+//   position: relative;
 
-  &::before {
-    background-image: url("../../assets/hero-section-dots.jpg");
-  }
+//   &::before {
+//     background-image: url("../../assets/hero-section-dots.jpg");
+//   }
 
-  z-index: 200;
-}
+//   z-index: 200;
+// }
 
 .hero-content {
   display: grid;
