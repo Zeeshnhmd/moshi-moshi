@@ -1,0 +1,74 @@
+.merchandise-wrapper {
+  display: flex;
+  position: relative;
+
+  .left-side {
+    background-color: var(--secondary);
+    width: 50%;
+    padding: 164px 0 316px 100px;
+    position: relative;
+
+    .title {
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 98.19%;
+      font-family: var(--font-oswald);
+      padding-bottom: 40px;
+      color: var(--white-color);
+    }
+
+    .description {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 139.69%;
+      font-family: var(--font-oswald);
+      color: var(--text-color-secondary);
+      padding-bottom: 65px;
+    }
+
+    .shop-now {
+      display: flex;
+      align-items: center;
+      float: left;
+      gap: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 24px;
+      font-family: var(--font-oswald);
+      color: var(--white-color);
+      text-transform: uppercase;
+      background-color: var(--background-color-secondary);
+      padding: 15px 50px;
+      border-radius: 33px;
+    }
+
+    .half-circle {
+      position: absolute;
+      left: 0;
+      top: 350px;
+    }
+  }
+
+  .right-side {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    background: url("../../assets/merchant-bg.jpg");
+    background-position: right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .merchant-product {
+      width: 600px;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 63px;
+  }
+}

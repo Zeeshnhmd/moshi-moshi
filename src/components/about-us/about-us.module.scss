@@ -1,6 +1,6 @@
 .about-us-wrapper {
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   background: linear-gradient(360deg, #121011 0%, rgba(28, 25, 25, 0) 100%),
     linear-gradient(180deg, #121011 0%, rgba(28, 25, 25, 0) 100%),
     url(../../assets/about-us-wave.png) repeat center center,
@@ -10,6 +10,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover, 800px;
+  padding: 240px 0 90px 0;
 
   .about-us {
     height: 100%;
@@ -67,11 +68,6 @@
         img {
           width: 700px;
         }
-        // background: url("../../assets/aboutus.jpg");
-        // -webkit-background-size: cover;
-        // -moz-background-size: cover;
-        // -o-background-size: cover;
-        // background-size: cover;
       }
     }
   }

@@ -1,0 +1,10 @@
+.image-gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  .image {
+    min-width: 425px;
+    width: 100%;
+    max-height: 930px;
+    object-fit: cover;
+  }
+}

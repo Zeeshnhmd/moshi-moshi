@@ -3,12 +3,13 @@
 .hero-section-wrapper {
   // position: relative;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   background: url("../../assets/hero-section.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-bottom: 73px;
 
   // &::before {
   //   content: "";
