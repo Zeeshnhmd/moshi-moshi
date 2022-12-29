@@ -1,0 +1,56 @@
+@import "../../scss/base/base.scss";
+
+.navbar-wrapper {
+  background: linear-gradient(180deg, #0e0e0e 0%, rgba(11, 11, 11, 0) 100%);
+  color: var(--white-color);
+
+  .navbar {
+    font-family: var(--roboto-font);
+    padding: 53px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-menu {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .menu-icon {
+        cursor: pointer;
+      }
+    }
+
+    .brand-name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: var(--white-color);
+    }
+
+    .nav-menus {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 36px;
+
+      .nav-link {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: var(--white-color);
+        cursor: pointer;
+
+        &:last-child {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          border: 2px solid var(--white-color);
+          padding: 11px 20px;
+        }
+      }
+    }
+  }
+}

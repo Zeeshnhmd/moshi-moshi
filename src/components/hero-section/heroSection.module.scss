@@ -1,0 +1,24 @@
+.hero-section-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  &::before {
+    content: "";
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/hero-section.jpg");
+    background-size: cover;
+  }
+  z-index: 10;
+}
+
+.hero-section {
+  position: relative;
+  &::before {
+    background-image: url("../../assets/hero-section-dots.jpg");
+  }
+  z-index: 200;
+}
