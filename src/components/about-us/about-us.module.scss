@@ -1,0 +1,83 @@
+.about-us-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(360deg, #121011 0%, rgba(28, 25, 25, 0) 100%),
+    linear-gradient(180deg, #121011 0%, rgba(28, 25, 25, 0) 100%),
+    url(../../assets/about-us-wave.png) repeat center center,
+    url("../../assets/about-us-line.svg") no-repeat;
+  background-position: top left, right bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover, 800px;
+
+  .about-us {
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    .about-us-content {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .left-side {
+        z-index: 100;
+        .heading {
+          font-weight: 700;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: var(--white-color);
+          font-family: var(--font-oswald);
+          margin-bottom: 38px;
+        }
+
+        .title {
+          font-weight: 700;
+          font-size: 100px;
+          line-height: 98.19%;
+          text-transform: uppercase;
+          color: var(--white-color);
+          font-family: var(--font-oswald);
+          margin-bottom: 15px;
+        }
+
+        .description {
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 140%;
+          font-family: var(--font-oswald);
+          width: 50%;
+          color: var(--text-color);
+          margin-bottom: 41px;
+        }
+
+        .explore {
+          display: flex;
+          gap: 26px;
+          align-items: center;
+          text-decoration: none;
+          color: var(--secondary);
+          float: left;
+        }
+      }
+
+      .right-side {
+        position: absolute;
+        right: 20px;
+        img {
+          width: 700px;
+        }
+        // background: url("../../assets/aboutus.jpg");
+        // -webkit-background-size: cover;
+        // -moz-background-size: cover;
+        // -o-background-size: cover;
+        // background-size: cover;
+      }
+    }
+  }
+  .toit-brewery {
+    margin-top: 180px;
+    text-align: center;
+    color: var(--text-color);
+  }
+}

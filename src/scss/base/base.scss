@@ -3,12 +3,13 @@
 :root {
   --font-family: "Jost", sans-serif;
   --font-oswald: "Oswald", sans-serif;
-  --roboto-font: "Roboto", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
   --white-color: #ffffff;
   --black-color: #000000;
   --primary: #efeddd;
   --secondary: #ca9e67;
   --background-color: #f2f2f2;
+  --text-color: #e0e0e0;
 }
 
 * {
@@ -22,7 +23,7 @@ html {
 }
 
 .app-container {
-  background-color: var(--black-color);
+  background-color: #121011;
   font-family: var(--font-family);
   overflow-x: hidden;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
