@@ -1,24 +1,81 @@
+@import "../../scss/base/base.scss";
+
 .hero-section-wrapper {
   position: relative;
   width: 100vw;
   height: 100vh;
+
   &::before {
     content: "";
     position: absolute;
     // top: 0;
     // left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../../assets/hero-section.jpg");
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/hero-section.png");
     background-size: cover;
   }
+
   z-index: 10;
 }
 
 .hero-section {
   position: relative;
+
   &::before {
     background-image: url("../../assets/hero-section-dots.jpg");
   }
+
   z-index: 200;
+}
+
+.hero-content {
+  display: grid;
+  place-items: center;
+  margin-top: -100px;
+
+  .logo {
+    max-width: 108px;
+    max-height: 176px;
+    margin-bottom: 66px;
+  }
+
+  .title {
+    display: grid;
+    place-items: center;
+    margin-bottom: 23px;
+
+    .toit {
+      font-family: var(--font-oswald);
+      font-weight: 900;
+      font-size: 200px;
+      line-height: 73.69%;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    .toit {
+      padding-bottom: 50px;
+    }
+
+    .beer {
+      max-width: 450px;
+    }
+  }
+
+  .scroll-down {
+    display: grid;
+    place-items: center;
+
+    .scroll-arrow {
+      margin-bottom: 20px;
+    }
+
+    .scroll-down-text {
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--white-color);
+    }
+  }
 }
