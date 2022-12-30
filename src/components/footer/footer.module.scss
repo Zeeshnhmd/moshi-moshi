@@ -25,10 +25,19 @@
       transform: translate(-50%, 0);
       width: 100%;
       object-fit: cover;
-      width: 581px;
+      max-width: 581px;
       bottom: -7px;
+
+      @media (max-width: 1024px) {
+        max-width: 400px;
+      }
+
+      @media (max-width: 425px) {
+        max-width: 200px;
+      }
     }
   }
+
   .back-to-top {
     display: flex;
     flex-direction: column;
@@ -37,15 +46,28 @@
     align-items: center;
     padding-top: 80px;
 
-    .arrow {
-      width: 25px;
-      cursor: pointer;
+    @media (max-width: 1024px) {
+      padding-top: 50px;
     }
+
+    .arrow {
+      max-width: 25px;
+      cursor: pointer;
+
+      @media (max-width: 425px) {
+        max-width: 20px;
+      }
+    }
+
     .top {
       font-weight: 400;
       font-size: 24px;
       color: var(--white-color);
       cursor: pointer;
+
+      @media (max-width: 425px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -54,14 +76,26 @@
     justify-content: space-between;
     padding-top: 100px;
 
+    @media (max-width: 1024px) {
+      padding-top: 0px;
+    }
+
     .footer-left-content {
       display: flex;
       flex-direction: column;
       gap: 100px;
       margin-bottom: 200px;
 
+      @media (max-width: 425px) {
+        gap: 50px;
+      }
+
       .footer-ul {
         list-style-type: none;
+
+        @media (max-width: 425px) {
+          padding-left: 20px;
+        }
 
         .footer-li {
           .footer-a {
@@ -73,6 +107,16 @@
             font-size: 18px;
             color: #dc9696;
             margin-bottom: 20px;
+
+            @media (max-width: 425px) {
+              gap: 10px;
+              margin-bottom: 10px;
+              font-size: 16px;
+            }
+
+            .link-arrow {
+              max-width: 16px;
+            }
           }
         }
       }
@@ -82,8 +126,14 @@
         font-size: 18px;
         color: #dc9696;
         z-index: 100;
+
+        @media (max-width: 425px) {
+          font-size: 16px;
+          padding-left: 20px;
+        }
       }
     }
+
     .footer-right-content {
       .address,
       .phone,
@@ -93,15 +143,32 @@
         font-size: 18px;
         line-height: 159.19%;
         color: #dc9696;
+
+        @media (max-width: 425px) {
+          font-size: 16px;
+        }
       }
+
       .address {
         padding-bottom: 49px;
+
+        @media (max-width: 425px) {
+          padding-bottom: 0;
+        }
       }
+
       .phone {
         padding-bottom: 13px;
+        @media (max-width: 425px) {
+          padding-bottom: 0;
+        }
       }
+
       .email {
         padding-bottom: 100px;
+        @media (max-width: 425px) {
+          padding-bottom: 35px;
+        }
       }
     }
   }

@@ -37,7 +37,11 @@ const Footer = ({ scrollToTop }) => {
               {footerLinks.map((el) => (
                 <li key={el.id} className={styles["footer-li"]}>
                   <a className={styles["footer-a"]} href={el.link}>
-                    <img className="img-fluid" src={LinkArrow} alt="" />
+                    <img
+                      className={`${styles["link-arrow"]} img-fluid`}
+                      src={LinkArrow}
+                      alt=""
+                    />
                     {el.title}
                   </a>
                 </li>
