@@ -16,15 +16,19 @@ const Footer = ({ scrollToTop }) => {
   return (
     <div className={styles["footer-wrapper"]}>
       <div className={styles["footer-svg"]}>
-        <img src={FooterSvg} alt="" />
+        <img className="img-fluid" src={FooterSvg} alt="" />
       </div>
       <div className={styles["footer-glass"]}>
-        <img src={FooterGlass} alt="" />
+        <img className="img-fluid" src={FooterGlass} alt="" />
       </div>
 
       <div className="container">
         <div className={styles["back-to-top"]} onClick={scrollToTop}>
-          <img className={styles["arrow"]} src={BackToTop} alt="" />
+          <img
+            className={`${styles["arrow"]} img-fluid`}
+            src={BackToTop}
+            alt=""
+          />
           <p className={styles["top"]}>Top</p>
         </div>
         <div className={styles["footer-content"]}>
@@ -33,7 +37,7 @@ const Footer = ({ scrollToTop }) => {
               {footerLinks.map((el) => (
                 <li key={el.id} className={styles["footer-li"]}>
                   <a className={styles["footer-a"]} href={el.link}>
-                    <img src={LinkArrow} alt="" />
+                    <img className="img-fluid" src={LinkArrow} alt="" />
                     {el.title}
                   </a>
                 </li>

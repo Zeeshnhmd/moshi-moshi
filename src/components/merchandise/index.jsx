@@ -16,18 +16,22 @@ const Merchandise = () => {
           humour, or randomised words which don't look even slightly believable.
         </p>
         <a className={styles["shop-now"]} href="/">
-          shop now <img src={ShopNowIcon} alt="" />
+          shop now <img className="img-fluid" src={ShopNowIcon} alt="" />
         </a>
-        <img className={styles["half-circle"]} src={HalfCircle} alt="" />
+        <img
+          className={`${styles["half-circle"]} img-fluid`}
+          src={HalfCircle}
+          alt=""
+        />
       </div>
       <div className={styles["right-side"]}>
         <img
-          className={styles["merchant-product"]}
+          className={`${styles["merchant-product"]} img-fluid`}
           src={MerchantProduct}
           alt=""
         />
       </div>
-      <img className={styles["circle"]} src={Circle} alt="" />
+      <img className={`${styles["circle"]} img-fluid`} src={Circle} alt="" />
     </div>
   );
 };

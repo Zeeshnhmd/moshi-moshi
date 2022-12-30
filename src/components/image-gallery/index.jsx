@@ -8,10 +8,26 @@ import styles from "./imageGallery.module.scss";
 const ImageGallery = () => {
   return (
     <div className={styles["image-gallery-wrapper"]}>
-      <img className={styles["image"]} src={Image1} alt="image1" />
-      <img className={styles["image"]} src={Image2} alt="image2" />
-      <img className={styles["image"]} src={Image3} alt="image3" />
-      <img className={styles["image"]} src={Image4} alt="image4" />
+      <img
+        className={`${styles["image"]} img-fluid`}
+        src={Image1}
+        alt="image1"
+      />
+      <img
+        className={`${styles["image"]} img-fluid`}
+        src={Image2}
+        alt="image2"
+      />
+      <img
+        className={`${styles["image"]} img-fluid`}
+        src={Image3}
+        alt="image3"
+      />
+      <img
+        className={`${styles["image"]} img-fluid`}
+        src={Image4}
+        alt="image4"
+      />
     </div>
   );
 };

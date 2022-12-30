@@ -14,10 +14,18 @@ const HeroSection = ({ scrollToProduct }) => {
           <div className={styles["hero-content"]}>
             <div className={styles["title"]}>
               <p className={styles["toit"]}>Toit</p>
-              <img className={styles["beer"]} src={BeerText} alt="" />
+              <img
+                className={`${styles["beer"]} img-fluid`}
+                src={BeerText}
+                alt=""
+              />
             </div>
             <div className={styles["scroll-down"]} onClick={scrollToProduct}>
-              <img className={styles["scroll-arrow"]} src={ScrollDown} alt="" />
+              <img
+                className={`${styles["scroll-arrow"]} img-fluid`}
+                src={ScrollDown}
+                alt=""
+              />
               <p className={styles["scroll-down-text"]}>Scroll down</p>
             </div>
           </div>
