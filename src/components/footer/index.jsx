@@ -5,7 +5,7 @@ import BackToTop from "../../assets/back-to-top.svg";
 
 import styles from "./footer.module.scss";
 
-const Footer = () => {
+const Footer = ({ scrollToTop }) => {
   const footerLinks = [
     { id: "1", title: "About", link: "/about" },
     { id: "2", title: "Beers", link: "/beers" },
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       <div className="container">
-        <div className={styles["back-to-top"]}>
+        <div className={styles["back-to-top"]} onClick={scrollToTop}>
           <img className={styles["arrow"]} src={BackToTop} alt="" />
           <p className={styles["top"]}>Top</p>
         </div>

@@ -5,7 +5,7 @@ import ScrollDown from "../../assets/scroll-down.svg";
 
 import styles from "./heroSection.module.scss";
 
-const HeroSection = () => {
+const HeroSection = ({ scrollToProduct }) => {
   return (
     <>
       <div className={styles["hero-section-wrapper"]}>
@@ -18,7 +18,7 @@ const HeroSection = () => {
               <p className={styles["toit"]}>Toit</p>
               <img className={styles["beer"]} src={BeerText} alt="" />
             </div>
-            <div className={styles["scroll-down"]}>
+            <div className={styles["scroll-down"]} onClick={scrollToProduct}>
               <img className={styles["scroll-arrow"]} src={ScrollDown} alt="" />
               <p className={styles["scroll-down-text"]}>Scroll down</p>
             </div>

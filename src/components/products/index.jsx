@@ -1,5 +1,3 @@
-import Product1 from "../../assets/product1.jpg";
-
 import styles from "./products.module.scss";
 
 const Products = () => {
