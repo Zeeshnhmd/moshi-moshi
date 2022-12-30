@@ -7,12 +7,15 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover, cover;
+  background-size: cover;
   padding-bottom: 73px;
 
   @media (max-width: 768px) {
     height: 100vh;
     padding-bottom: 0;
+  }
+  @media (max-width: 425px) {
+    background-position: center;
   }
 
   .hero-content {

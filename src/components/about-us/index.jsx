@@ -22,14 +22,18 @@ const AboutUs = () => {
               </p>
 
               <a href="/" className={styles["explore"]}>
-                Explore <img className="img-fluid" src={ExploreIcon} alt="" />
+                Explore{" "}
+                <img
+                  className={`${styles["explore-icon"]} img-fluid`}
+                  src={ExploreIcon}
+                  alt=""
+                />
               </a>
             </div>
             <div className={styles["right-side"]}>
               <img className="img-fluid" src={AboutUsImage} alt="" />
             </div>
           </div>
-          <p className={styles["toit-brewery"]}>TOIT BREWERY</p>
         </div>
       </div>
     </div>

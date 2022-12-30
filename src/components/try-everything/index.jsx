@@ -9,6 +9,7 @@ const TryEveryThing = () => {
   return (
     <div className={styles["try-everything-wrapper"]}>
       <div className={styles["try-everything"]}>
+        <p className={styles["toit-brewery"]}>TOIT BREWERY</p>
         <img
           className={`${styles["small-circle"]} img-fluid`}
           src={SmallCircle}

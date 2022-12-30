@@ -11,6 +11,14 @@
   background-size: cover, 800px;
   padding: 240px 0 90px 0;
 
+  @media (max-width: 1024px) {
+    padding: 100px 0 50px 0;
+  }
+
+  @media (max-width: 425px) {
+    padding: 50px 0 50px 0;
+  }
+
   .about-us {
     height: 100%;
     display: grid;
@@ -20,8 +28,15 @@
       display: flex;
       align-items: center;
       position: relative;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 30px;
+      }
+
       .left-side {
         z-index: 100;
+
         .heading {
           font-weight: 700;
           font-size: 18px;
@@ -29,6 +44,10 @@
           color: var(--white-color);
           font-family: var(--font-oswald);
           margin-bottom: 38px;
+
+          @media (max-width: 425px) {
+            margin-bottom: 20px;
+          }
         }
 
         .title {
@@ -39,6 +58,14 @@
           color: var(--white-color);
           font-family: var(--font-oswald);
           margin-bottom: 15px;
+
+          @media (max-width: 1024px) {
+            font-size: 60px;
+          }
+
+          @media (max-width: 425px) {
+            font-size: 50px;
+          }
         }
 
         .description {
@@ -49,6 +76,14 @@
           width: 50%;
           color: var(--text-color);
           margin-bottom: 41px;
+
+          @media (max-width: 1024px) {
+            font-size: 18px;
+          }
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
         }
 
         .explore {
@@ -58,21 +93,41 @@
           text-decoration: none;
           color: var(--secondary);
           float: left;
+
+          @media (max-width: 1024px) {
+            gap: 15px;
+          }
+
+          .explore-icon {
+            max-width: 100%;
+
+            @media (max-width: 1024px) {
+              max-width: 30px;
+            }
+          }
         }
       }
 
       .right-side {
         position: absolute;
         right: 20px;
+
+        @media (max-width: 768px) {
+          position: static;
+        }
+
         img {
           max-width: 700px;
+
+          @media (max-width: 1024px) {
+            max-width: 500px;
+          }
+
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
         }
       }
     }
-  }
-  .toit-brewery {
-    margin-top: 180px;
-    text-align: center;
-    color: var(--text-color);
   }
 }
