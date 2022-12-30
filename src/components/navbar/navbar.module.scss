@@ -3,6 +3,7 @@
 .navbar-wrapper {
   background: linear-gradient(180deg, #0e0e0e 0%, rgba(11, 11, 11, 0) 100%);
   color: var(--white-color);
+  position: relative;
 
   .navbar {
     font-family: var(--roboto-font);
@@ -16,6 +17,9 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      @media (max-width: 1024px) {
+        width: fit-content;
+      }
 
       .menu-icon {
         cursor: pointer;
@@ -40,25 +44,62 @@
 
       @media (max-width: 1024px) {
         display: block;
+        background-color: rgba(255, 165, 79, 1);
+        z-index: 400;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        .toogle {
+          font-size: 20px;
+          font-weight: 600;
+          color: var(--black-color);
+        }
       }
     }
 
     .links-container {
       width: 40%;
+      @media (max-width: 1024px) {
+        z-index: 300;
+        background-color: #0e0e0e;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        width: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+      }
+
       .nav-menus {
         list-style: none;
         display: flex;
         align-items: center;
         gap: 26px;
 
+        @media (max-width: 1024px) {
+          flex-direction: column;
+        }
+
         .nav-link {
           font-weight: 700;
           font-size: 14px;
           line-height: 27px;
           text-transform: uppercase;
-          color: var(--white-color);
           cursor: pointer;
           font-family: var(--roboto-font);
+          text-decoration: none;
+          a {
+            text-decoration: none;
+            color: var(--white-color);
+          }
 
           &:last-child {
             display: flex;
@@ -68,6 +109,17 @@
             padding: 5px 10px;
           }
         }
+      }
+    }
+
+    .nav-visible {
+      @media (max-width: 1024px) {
+        width: 300px;
+        visibility: visible;
+        opacity: 1;
+      }
+      @media (max-width: 425px) {
+        width: 100%;
       }
     }
   }

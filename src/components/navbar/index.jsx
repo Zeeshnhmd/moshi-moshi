@@ -25,9 +25,15 @@ const Navbar = () => {
         <img className={`${styles["logo"]} img-fluid`} src={Logo} alt="" />
         <div className={styles["toogle-container"]}>
           {navState ? (
-            <MdClose onClick={() => setNavState(false)} />
+            <MdClose
+              className={styles["toogle"]}
+              onClick={() => setNavState(false)}
+            />
           ) : (
-            <GiHamburgerMenu onClick={() => setNavState(true)} />
+            <GiHamburgerMenu
+              className={styles["toogle"]}
+              onClick={() => setNavState(true)}
+            />
           )}
         </div>
         <div
@@ -36,12 +42,20 @@ const Navbar = () => {
           }`}
         >
           <ul className={styles["nav-menus"]}>
-            <li className={styles["nav-link"]}>kudix</li>
-            <li className={styles["nav-link"]}>Reservation</li>
-            <li className={styles["nav-link"]}>brewery tour</li>
             <li className={styles["nav-link"]}>
-              <span>Find My Beer</span>{" "}
-              <img className="img-fluid" src={FindBeerIcon} alt="" />
+              <a href="/">kudix</a>
+            </li>
+            <li className={styles["nav-link"]}>
+              <a href="/">Reservation</a>
+            </li>
+            <li className={styles["nav-link"]}>
+              <a href="/">brewery tour</a>
+            </li>
+            <li className={styles["nav-link"]}>
+              <a href="/">
+                <span>Find My Beer</span>
+                <img className="img-fluid" src={FindBeerIcon} alt="" />
+              </a>
             </li>
           </ul>
         </div>
