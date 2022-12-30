@@ -12,13 +12,22 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media (max-width: 425px) {
+      padding: 30px 10px;
+    }
+
     .logo-menu {
       width: 40%;
       display: flex;
       align-items: center;
       gap: 10px;
+
       @media (max-width: 1024px) {
         width: fit-content;
+      }
+
+      @media (max-width: 425px) {
+        display: none;
       }
 
       .menu-icon {
@@ -52,6 +61,7 @@
         height: 40px;
         display: grid;
         place-items: center;
+
         .toogle {
           font-size: 20px;
           font-weight: 600;
@@ -62,6 +72,7 @@
 
     .links-container {
       width: 40%;
+
       @media (max-width: 1024px) {
         z-index: 300;
         background-color: #0e0e0e;
@@ -96,6 +107,7 @@
           cursor: pointer;
           font-family: var(--roboto-font);
           text-decoration: none;
+
           a {
             text-decoration: none;
             color: var(--white-color);
@@ -118,6 +130,7 @@
         visibility: visible;
         opacity: 1;
       }
+
       @media (max-width: 425px) {
         width: 100%;
       }
