@@ -20,6 +20,7 @@
       .menu-icon {
         cursor: pointer;
       }
+
       .brand-name {
         font-weight: 700;
         font-size: 18px;
@@ -34,28 +35,38 @@
       width: 20%;
     }
 
-    .nav-menus {
+    .toogle-container {
+      display: none;
+
+      @media (max-width: 1024px) {
+        display: block;
+      }
+    }
+
+    .links-container {
       width: 40%;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 26px;
+      .nav-menus {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 26px;
 
-      .nav-link {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 27px;
-        text-transform: uppercase;
-        color: var(--white-color);
-        cursor: pointer;
-        font-family: var(--roboto-font);
+        .nav-link {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 27px;
+          text-transform: uppercase;
+          color: var(--white-color);
+          cursor: pointer;
+          font-family: var(--roboto-font);
 
-        &:last-child {
-          display: flex;
-          align-items: center;
-          gap: 5px;
-          border: 2px solid var(--white-color);
-          padding: 5px 10px;
+          &:last-child {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border: 2px solid var(--white-color);
+            padding: 5px 10px;
+          }
         }
       }
     }

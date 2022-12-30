@@ -9,51 +9,80 @@
   -o-background-size: cover;
   background-size: cover, cover;
   padding-bottom: 73px;
-}
 
-.hero-content {
-  display: grid;
-  place-items: center;
-  margin-top: -100px;
-  margin-top: 80px;
-
-  .title {
-    display: grid;
-    place-items: center;
-    margin-bottom: 23px;
-
-    .toit {
-      font-family: var(--font-oswald);
-      font-weight: 900;
-      font-size: 200px;
-      line-height: 73.69%;
-      text-transform: uppercase;
-      color: var(--primary);
-    }
-
-    .toit {
-      padding-bottom: 50px;
-    }
-
-    .beer {
-      max-width: 450px;
-    }
+  @media (max-width: 768px) {
+    height: 100vh;
+    padding-bottom: 0;
   }
 
-  .scroll-down {
+  .hero-content {
     display: grid;
     place-items: center;
-    cursor: pointer;
+    margin-top: -100px;
+    margin-top: 80px;
 
-    .scroll-arrow {
-      margin-bottom: 20px;
+    @media (max-width: 768px) {
+      height: 100%;
     }
 
-    .scroll-down-text {
-      font-weight: 400;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: var(--white-color);
+    .title {
+      display: grid;
+      place-items: center;
+      margin-bottom: 23px;
+
+      .toit {
+        font-family: var(--font-oswald);
+        font-weight: 900;
+        font-size: 200px;
+        line-height: 73.69%;
+        text-transform: uppercase;
+        color: var(--primary);
+        padding-bottom: 50px;
+
+        @media (max-width: 768px) {
+          font-size: 150px;
+          padding-bottom: 30px;
+        }
+
+        @media (max-width: 425px) {
+          font-size: 100px;
+          padding-bottom: 20px;
+        }
+      }
+
+      .beer {
+        max-width: 450px;
+
+        @media (max-width: 768px) {
+          max-width: 350px;
+        }
+
+        @media (max-width: 425px) {
+          max-width: 250px;
+        }
+      }
+    }
+
+    .scroll-down {
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        position: absolute;
+        bottom: 20px;
+      }
+
+      .scroll-arrow {
+        margin-bottom: 20px;
+      }
+
+      .scroll-down-text {
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--white-color);
+      }
     }
   }
 }
