@@ -16,7 +16,12 @@ const Merchandise = () => {
           humour, or randomised words which don't look even slightly believable.
         </p>
         <a className={styles["shop-now"]} href="/">
-          shop now <img className="img-fluid" src={ShopNowIcon} alt="" />
+          shop now{" "}
+          <img
+            className={`${styles["shop-now-arrow"]} img-fluid`}
+            src={ShopNowIcon}
+            alt=""
+          />
         </a>
         <img
           className={`${styles["half-circle"]} img-fluid`}
