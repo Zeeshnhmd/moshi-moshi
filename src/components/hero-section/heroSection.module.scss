@@ -1,50 +1,21 @@
 @import "../../scss/base/base.scss";
 
 .hero-section-wrapper {
-  // position: relative;
   width: 100vw;
-  // height: 100vh;
   background: url("../../assets/hero-section.png") no-repeat center center;
+  background-position: top left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover, cover;
   padding-bottom: 73px;
-
-  // &::before {
-  //   content: "";
-  //   // position: absolute;
-  //   // top: 0;
-  //   // left: 0;
-  //   width: 100vw;
-  //   height: 100vh;
-  //   background: url("../../assets/hero-section.png");
-  //   background-size: cover;
-  // }
-
-  // z-index: 10;
 }
-
-// .hero-section {
-//   position: relative;
-
-//   &::before {
-//     background-image: url("../../assets/hero-section-dots.jpg");
-//   }
-
-//   z-index: 200;
-// }
 
 .hero-content {
   display: grid;
   place-items: center;
   margin-top: -100px;
-
-  .logo {
-    max-width: 108px;
-    max-height: 176px;
-    margin-bottom: 66px;
-  }
+  margin-top: 80px;
 
   .title {
     display: grid;

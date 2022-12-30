@@ -9,9 +9,10 @@
     padding: 53px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     .logo-menu {
+      width: 40%;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -19,36 +20,42 @@
       .menu-icon {
         cursor: pointer;
       }
+      .brand-name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: var(--white-color);
+      }
     }
 
-    .brand-name {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
-      text-transform: uppercase;
-      color: var(--white-color);
+    .logo {
+      max-width: 70px;
+      width: 20%;
     }
 
     .nav-menus {
+      width: 40%;
       list-style: none;
       display: flex;
       align-items: center;
-      gap: 36px;
+      gap: 26px;
 
       .nav-link {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 27px;
         text-transform: uppercase;
         color: var(--white-color);
         cursor: pointer;
+        font-family: var(--roboto-font);
 
         &:last-child {
           display: flex;
           align-items: center;
           gap: 5px;
           border: 2px solid var(--white-color);
-          padding: 11px 20px;
+          padding: 5px 10px;
         }
       }
     }
